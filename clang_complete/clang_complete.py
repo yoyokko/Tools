@@ -56,6 +56,7 @@ def get_clang_args(projectfolder, projectfilepath, target, sdk='iphonesimulator'
                     'BUILD_ROOT=%s' % deriveddatapath,
                     'CACHE_ROOT=%s/cache' % deriveddatapath,
                     'OBJROOT=%s' % deriveddatapath,
+                    'MODULE_CACHE_DIR=%s/ModuleCache' % deriveddatapath,
                     'SHARED_PRECOMPS_DIR=%s/Build/Intermediates/PrecompiledHeaders' % deriveddatapath,
                     'SYMROOT=%s/Build/Products' % deriveddatapath], stdout=PIPE).communicate()[0]
 

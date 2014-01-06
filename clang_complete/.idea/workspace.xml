@@ -26,7 +26,7 @@
       <file leaf-file-name="clang_complete.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/clang_complete.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="27" selection-start="1940" selection-end="1940" vertical-scroll-proportion="0.48873875" vertical-offset="752" max-vertical-offset="2890">
+            <state line="145" column="0" selection-start="5059" selection-end="5059" vertical-scroll-proportion="0.41456953" vertical-offset="2152" max-vertical-offset="2907">
               <folding>
                 <element signature="e#19#28#0" expanded="true" />
               </folding>
@@ -95,12 +95,12 @@
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Font" />
     <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Font" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="FullScreen" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -323,6 +323,33 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/clang_complete.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="54" selection-start="1851" selection-end="1851" vertical-scroll-proportion="0.0" vertical-offset="786" max-vertical-offset="2907">
+          <folding>
+            <element signature="e#19#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clang_complete.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="44" selection-start="2334" selection-end="2334" vertical-scroll-proportion="0.0" vertical-offset="854" max-vertical-offset="2907">
+          <folding>
+            <element signature="e#19#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clang_complete.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="27" selection-start="1940" selection-end="1940" vertical-scroll-proportion="0.0" vertical-offset="803" max-vertical-offset="2890">
+          <folding>
+            <element signature="e#19#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clang_complete.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state line="127" column="60" selection-start="4358" selection-end="4358" vertical-scroll-proportion="0.0" vertical-offset="2108" max-vertical-offset="2720">
           <folding>
             <element signature="e#19#28#0" expanded="true" />
@@ -360,7 +387,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/clang_complete.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="27" selection-start="1940" selection-end="1940" vertical-scroll-proportion="0.48873875" vertical-offset="752" max-vertical-offset="2890">
+        <state line="145" column="0" selection-start="5059" selection-end="5059" vertical-scroll-proportion="0.41456953" vertical-offset="2152" max-vertical-offset="2907">
           <folding>
             <element signature="e#19#28#0" expanded="true" />
           </folding>
