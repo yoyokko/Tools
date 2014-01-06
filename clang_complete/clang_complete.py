@@ -7,8 +7,8 @@ import shutil
 
 
 def usage():
-    print 'Usage: \nclang_complete XcodeProjectFolderPath'
-    print 'clang_complete XcodeProjectFolderPath ProjectName TargetName'
+    print 'Usage: \nclang_complete XcodeProjectFolderPath macosx/iphoneos/iphonesimulator'
+    print 'clang_complete XcodeProjectFolderPath ProjectName TargetName macosx/iphoneos/iphonesimulator'
 
 
 def targets_in_projectfile(projectfile):
@@ -34,7 +34,7 @@ def targets_in_projectfile(projectfile):
     return targets
 
 
-def get_clang_args(projectfolder, projectfilepath, target):
+def get_clang_args(projectfolder, projectfilepath, target, sdk='iphonesimulator'):
     """
     find the arguments which xcode used to build source files
     @param projectfilepath:
@@ -47,13 +47,17 @@ def get_clang_args(projectfolder, projectfilepath, target):
     if os.path.exists(deriveddatapath):
         shutil.rmtree(deriveddatapath)
     # Popen(['xcrun', 'xcodebuild', 'clean', '-project', projectfilepath, '-target', target], stdout=PIPE).communicate()
-    output = Popen(['xcrun', 'xcodebuild', '-configuration', 'Debug', '-project', projectfilepath, '-target', target,
-                    "BUILD_DIR=%s" % deriveddatapath,
-                    "BUILD_ROOT=%s" % deriveddatapath,
-                    "CACHE_ROOT=%s/cache" % deriveddatapath,
-                    "OBJROOT=%s" % deriveddatapath,
-                    "SHARED_PRECOMPS_DIR=%s/Build/Intermediates/PrecompiledHeaders" % deriveddatapath,
-                    "SYMROOT=%s/Build/Products" % deriveddatapath], stdout=PIPE).communicate()[0]
+    output = Popen(['xcrun', 'xcodebuild',
+                    '-configuration', 'Debug',
+                    '-project', projectfilepath,
+                    '-target', target,
+                    '-sdk', sdk,
+                    'BUILD_DIR=%s' % deriveddatapath,
+                    'BUILD_ROOT=%s' % deriveddatapath,
+                    'CACHE_ROOT=%s/cache' % deriveddatapath,
+                    'OBJROOT=%s' % deriveddatapath,
+                    'SHARED_PRECOMPS_DIR=%s/Build/Intermediates/PrecompiledHeaders' % deriveddatapath,
+                    'SYMROOT=%s/Build/Products' % deriveddatapath], stdout=PIPE).communicate()[0]
 
     buildoutput = output.split('\n')
     args = ''
@@ -89,7 +93,7 @@ def format_directories(directories):
     return "\n".join(['-I"%s"' % (p,) for p in directories])
 
 def main(argv):
-    if len(argv) != 1 and len(argv) != 3:
+    if len(argv) != 2 and len(argv) != 4:
         usage()
         sys.exit(1)
 
@@ -99,17 +103,23 @@ def main(argv):
         print '%s is not exists.' % projectfolder
         sys.exit(1)
 
-    projectname = targetname = None
+    projectname = targetname = sdk = None
 
-    if len(argv) == 3:
+    if len(argv) == 4:
         projectname = argv[1]
         targetname = argv[2]
+        sdk = argv[3]
     else:
+        sdk = argv[1]
         for root, dirs, files in os.walk(projectfolder):
             for dir in dirs:
                 if dir.endswith('.xcodeproj'):
                     projectname = dir
                     break
+
+    if sdk not in ['macosx', 'iphoneos', 'iphonesimulator']:
+        print 'SDK is not correct. It should be one of macosx/iphoneos/iphonesimulator.'
+        sys.exit(1)
 
     targets = targets_in_projectfile(os.path.join(projectfolder, projectname))
 
@@ -124,9 +134,10 @@ def main(argv):
 
     print 'Processing target "%s" in project "%s"...' % (targetname, projectname)
 
-    argstring = get_clang_args(projectfolder, os.path.join(projectfolder, projectname), targetname)
+    argstring = get_clang_args(projectfolder, os.path.join(projectfolder, projectname), targetname, sdk)
     args = (('\n-'.join((' '+argstring).split(' -'))).strip('\n ')).split('\n')
-    if len(args) == 0:
+
+    if len(args) == 0 or len(argstring) == 0:
         print('Build target "%s" failed. Please check your code.' % targetname)
         sys.exit(1)
 

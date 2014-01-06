@@ -26,7 +26,7 @@
       <file leaf-file-name="clang_complete.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/clang_complete.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="147" column="0" selection-start="5363" selection-end="5363" vertical-scroll-proportion="0.7298013" vertical-offset="1948" max-vertical-offset="2703">
+            <state line="57" column="27" selection-start="1940" selection-end="1940" vertical-scroll-proportion="0.48873875" vertical-offset="752" max-vertical-offset="2890">
               <folding>
                 <element signature="e#19#28#0" expanded="true" />
               </folding>
@@ -68,7 +68,7 @@
     <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1" splitterProportion="0.5">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -79,11 +79,23 @@
       <autoscrollFromSource />
       <sortByType />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="clang_complete" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="options.lastSelected" value="preferences.keymap" />
+    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Font" />
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="FullScreen" value="false" />
@@ -109,7 +121,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="clang_complete" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/clang_complete.py" />
-      <option name="PARAMETERS" value="../../XVim" />
+      <option name="PARAMETERS" value="../../XVim macosx" />
       <RunnerSettings RunnerId="PyDebugRunner" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PyDebugRunner" />
@@ -273,14 +285,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="4" y="22" width="1436" height="878" extended-state="0" />
+    <frame x="4" y="22" width="1436" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36350974" sideWeight="0.6704981" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.12604457" sideWeight="0.6704981" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39974457" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -305,10 +317,28 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="12" />
+      <option name="time" value="13" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/clang_complete.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="127" column="60" selection-start="4358" selection-end="4358" vertical-scroll-proportion="0.0" vertical-offset="2108" max-vertical-offset="2720">
+          <folding>
+            <element signature="e#19#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clang_complete.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="147" column="0" selection-start="5363" selection-end="5363" vertical-scroll-proportion="0.0" vertical-offset="2160" max-vertical-offset="2385">
+          <folding>
+            <element signature="e#19#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/clang_complete.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="0" selection-start="187" selection-end="187" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="493">
@@ -320,21 +350,17 @@
     </entry>
     <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/ntpath.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="397" column="4" selection-start="13415" selection-end="13415" vertical-scroll-proportion="3.136821" vertical-offset="5088" max-vertical-offset="9061">
-          <folding />
-        </state>
+        <state line="397" column="4" selection-start="13415" selection-end="13415" vertical-scroll-proportion="3.136821" vertical-offset="5088" max-vertical-offset="9061" />
       </provider>
     </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1142" column="0" selection-start="47510" selection-end="47510" vertical-scroll-proportion="0.0" vertical-offset="18145" max-vertical-offset="25024">
-          <folding />
-        </state>
+        <state line="1142" column="0" selection-start="47510" selection-end="47510" vertical-scroll-proportion="0.0" vertical-offset="18145" max-vertical-offset="25024" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/clang_complete.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="147" column="0" selection-start="5363" selection-end="5363" vertical-scroll-proportion="0.7298013" vertical-offset="1948" max-vertical-offset="2703">
+        <state line="57" column="27" selection-start="1940" selection-end="1940" vertical-scroll-proportion="0.48873875" vertical-offset="752" max-vertical-offset="2890">
           <folding>
             <element signature="e#19#28#0" expanded="true" />
           </folding>
