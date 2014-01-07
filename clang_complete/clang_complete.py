@@ -52,6 +52,7 @@ def get_clang_args(projectfolder, projectfilepath, target, sdk='iphonesimulator'
                     '-project', projectfilepath,
                     '-target', target,
                     '-sdk', sdk,
+                    'ONLY_ACTIVE_ARCH=NO',
                     'BUILD_DIR=%s' % deriveddatapath,
                     'BUILD_ROOT=%s' % deriveddatapath,
                     'CACHE_ROOT=%s/cache' % deriveddatapath,
@@ -74,6 +75,10 @@ def get_clang_args(projectfolder, projectfilepath, target, sdk='iphonesimulator'
                     args = nexline[start:end].strip()
                     break
             break
+
+    if len(args) == 0:
+        print output
+
     return args
 
 

@@ -26,7 +26,7 @@
       <file leaf-file-name="clang_complete.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/clang_complete.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="145" column="0" selection-start="5059" selection-end="5059" vertical-scroll-proportion="0.41456953" vertical-offset="2152" max-vertical-offset="2907">
+            <state line="70" column="47" selection-start="2661" selection-end="2661" vertical-scroll-proportion="0.6178082" vertical-offset="739" max-vertical-offset="2992">
               <folding>
                 <element signature="e#19#28#0" expanded="true" />
               </folding>
@@ -95,12 +95,12 @@
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Font" />
+    <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="FullScreen" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -121,7 +121,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="clang_complete" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/clang_complete.py" />
-      <option name="PARAMETERS" value="../../XVim macosx" />
+      <option name="PARAMETERS" value="../../VcardCocoa/YOVcardLibrary iphoneos" />
       <RunnerSettings RunnerId="PyDebugRunner" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PyDebugRunner" />
@@ -314,13 +314,23 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="false" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="13" />
+      <option name="time" value="15" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/clang_complete.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="145" column="0" selection-start="5293" selection-end="5293" vertical-scroll-proportion="0.0" vertical-offset="2414" max-vertical-offset="2703">
+          <folding>
+            <element signature="e#19#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/clang_complete.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="55" column="54" selection-start="1851" selection-end="1851" vertical-scroll-proportion="0.0" vertical-offset="786" max-vertical-offset="2907">
@@ -387,7 +397,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/clang_complete.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="145" column="0" selection-start="5059" selection-end="5059" vertical-scroll-proportion="0.41456953" vertical-offset="2152" max-vertical-offset="2907">
+        <state line="70" column="47" selection-start="2661" selection-end="2661" vertical-scroll-proportion="0.6178082" vertical-offset="739" max-vertical-offset="2992">
           <folding>
             <element signature="e#19#28#0" expanded="true" />
           </folding>
